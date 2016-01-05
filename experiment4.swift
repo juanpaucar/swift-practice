@@ -25,6 +25,10 @@ class AppDelegate: NSObject, NSApplicationDelegate
     text.selectable = false
     window.contentView!.addSubview(text)
 
+    let text2 = NSTextView(frame: NSMakeRect(20, 110, 180, 30))
+    text2.string = "This is text 2"
+    window.contentView!.addSubview(text2)
+
     window.makeKeyAndOrderFront(window)
     window.level = 1
   }
